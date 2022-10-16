@@ -10,6 +10,7 @@ const btnMenu = document.querySelector('.btn-menu');
 const btnClose = document.querySelector('.btn-close');
 const menuList = document.querySelector('#title-list');
 const btnList = document.querySelector('#btn-list');
+const body = document.querySelector('body');
 
 const overClick = () => {
   topHeader.classList.remove('hidden');
@@ -45,18 +46,22 @@ const respond = (e) => {
     btnSearch.addEventListener('click', () => {
       search.classList.remove('visual');
       search.classList.add('open');
+      body.classList.add('overflow');
     });
     btnExit.addEventListener('click', () => {
       search.classList.add('visual');
+      body.classList.remove('overflow');
     });
     btnMenu.addEventListener('click', () => {
       navLinks.classList.add('nav-menu-transform');
       btnClose.classList.remove('hidden');
+      body.classList.add('overflow');
     });
 
     btnClose.addEventListener('click', () => {
       navLinks.classList.remove('nav-menu-transform');
       btnClose.classList.add('hidden');
+      body.classList.remove('overflow');
     });
     search.addEventListener('click', () => {
       search.classList.remove('visual');
