@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/mobile.css" />
+
+    <!--Swiper JS-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--Scroll Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -450,7 +455,14 @@
         </div>
       </div>
     </div>
-    <div class="banner-image">
+    <div
+      class="banner-image"
+      data-aos="zoom-in-up"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="true"
+    >
       <div class="banner-title-text">
         <p>Join Forces Pack</p>
         <h1>40 Years Of Force</h1>
@@ -460,7 +472,15 @@
         </div>
       </div>
     </div>
-    <div class="promotion-AF1">
+    <div
+      class="promotion-AF1"
+      data-aos="zoom-out-up"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="500"
+      data-aos-mirror="true"
+      data-aos-once="true"
+    >
       <h1 class="title-promotion">AF1 Highlight</h1>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -568,7 +588,15 @@
     <div class="essential">
       <h1 class="title-promotion">The Essentials</h1>
       <div class="box-img">
-        <div class="img-one">
+        <div
+          class="img-one"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <div class="text-img-box">
             <h3 id="title-img-text">
               Mood-bootsing Essential in Pretty Pastel
@@ -578,7 +606,15 @@
             >
           </div>
         </div>
-        <div class="img-two">
+        <div
+          class="img-two"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="1500"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <div class="text-img-box">
             <h3 id="title-img-text">Varsity Vintage Styles</h3>
             <a href="#">
@@ -591,10 +627,34 @@
     <div class="just-in">
       <h1 class="title-promotion">Just In</h1>
       <div class="img-box-just-in">
-        <div class="img-just-in-left"></div>
-        <div class="img-just-in-right"></div>
+        <div
+          class="img-just-in-left"
+          data-aos="fade-up-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        ></div>
+        <div
+          class="img-just-in-right"
+          data-aos="fade-down-left"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        ></div>
       </div>
-      <div class="text-just-in-box">
+      <div
+        class="text-just-in-box"
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="500"
+        data-aos-mirror="true"
+        data-aos-once="true"
+      >
         <span>'PlayOffs'</span>
         <h1>Air Jordan XXXVII</h1>
         <p>
@@ -608,7 +668,15 @@
         <button class="btn-black-shop"><a href="#">Shop</a></button>
       </div>
     </div>
-    <div class="miss">
+    <div
+      class="miss"
+      data-aos="zoom-out"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="500"
+      data-aos-mirror="true"
+      data-aos-once="true"
+    >
       <div class="text-miss">
         <h1>
           National Team <br />
@@ -619,5 +687,6 @@
     </div>
     <script src="JS/script.js"></script>
     <script src="JS/slider.js"></script>
+    <script src="JS/scroll.js"></script>
   </body>
 </html>
