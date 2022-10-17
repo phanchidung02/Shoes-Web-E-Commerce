@@ -562,7 +562,7 @@ h5 {
 
 .miss {
   margin: 50px;
-  background-image: url(..//Img//StartScreen_MS22.02_FUT22_1920x600.jpg);
+  background-image: url(..//Img//4d599a151930629.6315451d1b4e8.png);
   height: 800px;
   background-size: cover;
   background-position: right center;
@@ -574,21 +574,22 @@ h5 {
 
 .text-miss {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  left: 0;
+  top: 0;
   padding: 50px;
   user-select: none;
+  object-fit: cover;
 }
 
 .text-miss h1 {
   font-size: 64px;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
 
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  /* border-radius: 10px; */
+  border-radius: 10px;
   background-color: #f5f5f5;
 }
 
