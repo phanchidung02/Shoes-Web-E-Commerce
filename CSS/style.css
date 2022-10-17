@@ -613,3 +613,111 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.7);
   filter: blur(4px);
 }
+
+.more-nike {
+  margin: 50px;
+}
+
+.banner-gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.men {
+  background-image: url(..//Img/nikebasket.jfif);
+}
+
+.women {
+  background-image: url(..//Img/67ac0d3169ba13ea4dd68c72274c390d.jpg);
+}
+
+.kid {
+  background-image: url(..//Img/sneakersmagazine.jfif);
+}
+
+.men,
+.women,
+.kid {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex: 33.33%;
+  position: relative;
+  cursor: pointer;
+}
+.btn-watch-position {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 20px;
+}
+.btn-watch-position a {
+  color: black;
+  text-decoration: none;
+}
+
+.nike-store {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.nike-store > ul {
+  list-style-type: none;
+}
+
+.nike-store > ul > li {
+  padding-top: 10px;
+}
+
+.nike-store > ul > span {
+  font-size: 20px;
+}
+
+.find-store > li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.help > li a,
+.about > li a {
+  color: #7e7e7e;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.help > li a:hover,
+.about > li a:hover {
+  color: #fff;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.icon-box > li a {
+  color: #333;
+  padding: 8px;
+  background-color: #7e7e7e;
+  border-radius: 50%;
+}
+
+.icon-box > li:hover a {
+  background-color: #fff;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+}
