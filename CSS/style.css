@@ -10,6 +10,7 @@ body {
   background-color: white;
   font-family: 'Oswald', sans-serif;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 header {
@@ -255,11 +256,10 @@ input[type='search']::placeholder {
 .btn-close {
   padding: 12px;
   font-size: 24px;
-  transform: translateX(0);
-  right: 0;
   border: none;
   outline: none;
   background-color: white;
+  margin-left: 90%;
 }
 
 .btn-close:hover {
@@ -297,7 +297,6 @@ input[type='search']::placeholder {
   top: 30%;
   left: 5%;
   letter-spacing: 2px;
-  cursor: not-allowed;
 }
 
 .banner-title-text h1 {
@@ -348,13 +347,13 @@ p {
 
 .promotion-AF1 {
   margin: 50px;
+  user-select: none;
 }
 
 .swiper {
   width: 100%;
   height: 100%;
   user-select: none;
-  cursor: not-allowed;
 }
 
 .swiperBanner {
@@ -526,7 +525,6 @@ h5 {
   max-width: 960px;
   margin: 0 auto;
   user-select: none;
-  cursor: not-allowed;
 }
 
 .text-just-in-box h1 {
@@ -580,7 +578,6 @@ h5 {
   bottom: 0;
   padding: 50px;
   user-select: none;
-  cursor: not-allowed;
 }
 
 .text-miss h1 {
@@ -605,4 +602,14 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #000000;
   border: 2px solid #555555;
+}
+
+#overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: blur(4px);
 }

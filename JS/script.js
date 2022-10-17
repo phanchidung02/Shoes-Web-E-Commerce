@@ -3,14 +3,13 @@ const wishLists = document.querySelector('.wish-list');
 const cart = document.querySelector('.cart');
 const search = document.getElementById('search');
 const topHeader = document.querySelector('.top-header');
-const btnExit = document.querySelector('.btn-cancel');
+const btnCancel = document.querySelector('.btn-cancel');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 const btnSearch = document.querySelector('.btn-search');
 const btnMenu = document.querySelector('.btn-menu');
 const btnClose = document.querySelector('.btn-close');
-const menuList = document.querySelector('#title-list');
-const btnList = document.querySelector('#btn-list');
 const body = document.querySelector('body');
+const overlay = document.querySelector('#overlay');
 
 const overClick = () => {
   topHeader.classList.remove('hidden');
@@ -18,7 +17,7 @@ const overClick = () => {
   wishLists.classList.remove('hidden');
   navLinks.classList.remove('hidden');
   search.style.width = '200px';
-  btnExit.classList.add('hidden');
+  btnCancel.classList.add('hidden');
   document.querySelector('.trend').classList.add('hidden');
   document.querySelector('.logo').classList.remove('hidden');
 };
@@ -29,14 +28,14 @@ const onClick = () => {
   wishLists.classList.add('hidden');
   navLinks.classList.add('hidden');
   search.style.width = '800px';
-  btnExit.classList.remove('hidden');
+  btnCancel.classList.remove('hidden');
   document.querySelector('.trend').classList.remove('hidden');
   document.querySelector('.logo').classList.add('hidden');
 };
 
 search.addEventListener('click', onClick);
 
-btnExit.addEventListener('click', overClick);
+btnCancel.addEventListener('click', overClick);
 
 btnSearch.addEventListener('click', onClick);
 
@@ -48,13 +47,15 @@ const respond = (e) => {
       search.classList.add('open');
       body.classList.add('overflow');
     });
-    btnExit.addEventListener('click', () => {
+    btnCancel.addEventListener('click', () => {
       search.classList.add('visual');
       body.classList.remove('overflow');
+      overlay.classList.add('hidden');
     });
     btnMenu.addEventListener('click', () => {
       navLinks.classList.add('nav-menu-transform');
       btnClose.classList.remove('hidden');
+      overlay.classList.remove('hidden');
       body.classList.add('overflow');
     });
 
@@ -62,10 +63,16 @@ const respond = (e) => {
       navLinks.classList.remove('nav-menu-transform');
       btnClose.classList.add('hidden');
       body.classList.remove('overflow');
+      overlay.classList.add('hidden');
     });
     search.addEventListener('click', () => {
       search.classList.remove('visual');
       search.classList.add('open');
+    });
+    overlay.addEventListener('click', () => {
+      navLinks.classList.remove('nav-menu-transform');
+      overlay.classList.add('hidden');
+      body.classList.remove('overflow');
     });
   }
 };
