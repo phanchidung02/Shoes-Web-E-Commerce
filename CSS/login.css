@@ -1,0 +1,78 @@
+.logo-nike-login {
+    background-image: url(..//Img/swoosh_black_2x.png);
+    background-position: center;
+    background-size: 43px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+input[type='email'],
+input[type='password'] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #ddd;
+    width: 350px;
+    font-size: 14px;
+}
+
+input[type='email']::placeholder,
+input[type='password']::placeholder {
+    color: #8d8d8d;
+}
+.title-form-login {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+input[type='email']:focus,
+input[type='password']:focus {
+    border-color: black;
+}
+
+.login-note {
+    width: 300px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.login-note > a {
+    color: #8d8d8d;
+}
+
+.login-note > a:hover {
+    color: blue;
+}
+
+.btn-login {
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 350px;
+    background-color: black;
+    transition: all 0.4s;
+}
+
+.btn-login a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-login:hover {
+    background-color: #ccc;
+}

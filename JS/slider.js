@@ -13,9 +13,11 @@ var swiper = new Swiper('.mySwiper', {
 });
 
 var swiper = new Swiper('.mySwiperBanner', {
-    cssMode: true,
     spaceBetween: 30,
     centeredSlides: true,
+    slidesPerView: 1,
+    speed: 2000,
+    loop: true,
     autoplay: {
         delay: 2000,
         disableOnInteraction: false,
