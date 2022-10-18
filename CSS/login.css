@@ -1,7 +1,7 @@
 .logo-nike-login {
     background-image: url(..//Img/swoosh_black_2x.png);
     background-position: center;
-    background-size: 43px;
+    background-size: 50px;
     background-repeat: no-repeat;
     height: 50px;
     width: 100px;
@@ -13,12 +13,12 @@ form {
     justify-content: center;
     align-items: center;
     gap: 25px;
+    margin-top: 150px;
 }
 
 input[type='email'],
 input[type='password'] {
     padding: 10px;
-    border: none;
     outline: none;
     border: 1px solid #ddd;
     width: 350px;
@@ -75,4 +75,23 @@ input[type='password']:focus {
 
 .btn-login:hover {
     background-color: #ccc;
+}
+
+#pre-loader {
+    background: #f5f7fb url(..//Img/atom.gif) no-repeat center center;
+    height: 100vh;
+    background-size: 15%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#error-email,
+#error-pass {
+    width: 360px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
 }

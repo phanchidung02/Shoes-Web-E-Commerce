@@ -91,3 +91,12 @@ const respond = (e) => {
 
 respond(mediaQuery);
 mediaQuery.addEventListener('click', respond);
+
+//? Loading Effect
+let loader = document.getElementById('pre-loader');
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 2000);
+});

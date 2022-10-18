@@ -1,25 +1,49 @@
-const loadingLoginPage = () => {
-    const main = document.querySelector('.center-content');
-    const btnLogin = document.querySelector('#btn-loading');
-    btnLogin.addEventListener('click', () => {
-        main.innerHTML = `<div class="form-login">
-        <form action="#" id="loading">
-            <div class="logo-nike-login"></div>
-            <h1 class="title-form-login">
-                YOUR ACCOUNT <br />
-                FOR EVERYTHING NIKE
-            </h1>
-            <input type="email" placeholder="Email address" />
-            <input type="password" placeholder="Password" />
-            <p class="login-note">
-                By logging in, you agree to Nike's
-                <a href="#">Privacy Policy </a>and
-                <a href="#">Terms of Use.</a>
-            </p>
-            <button class="btn-login"><a href="#">Sign in</a></button>
-        </form>
-        </div>`;
-    });
+const form = document.querySelector('form');
+const email = document.getElementById('input-email');
+const password = document.getElementById('input-pass');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    checkValidateForm();
+});
+
+const checkValidateForm = () => {
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+
+    if (emailValue === '' && passwordValue === '') {
+        const errorEmail = document.getElementById('error-email');
+        const errorPass = document.getElementById('error-pass');
+        showError(errorEmail, email, 'Vui lòng nhập email');
+        showError(errorPass, password, 'Vui lòng nhập mật khẩu');
+        return false;
+    } else if (!checkEmailRegex(emailValue)) {
+        const errorEmail = document.getElementById('error-email');
+        showError(errorEmail, email, '');
+        return false;
+    } else if (passwordValue.length < 8) {
+        const errorPass = document.getElementById('error-pass');
+        showError(errorPass, password, 'Mật khẩu dưới 8 kí tự');
+        return false;
+    } else {
+        const errorPass = document.getElementById('error-pass');
+        const errorEmail = document.getElementById('error-email');
+        errorPass.style.display = 'none';
+        password.style.border = '2px solid green';
+        errorEmail.style.display = 'none';
+        email.style.border = '2px solid green';
+    }
 };
 
-document.addEventListener('DOMContentLoaded', loadingLoginPage);
+const showError = (errorCheck, email, message) => {
+    errorCheck.textContent = message;
+    errorCheck.style.color = 'red';
+    errorCheck.style.display = 'block';
+    email.style.border = '2px solid red';
+};
+
+const checkEmailRegex = (email) => {
+    const re =
+        /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    return String(email).toLowerCase().match(re);
+};

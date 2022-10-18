@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="CSS/home-page.css" />
         <link rel="stylesheet" href="CSS/mobile-home-page.css" />
-        <link rel="stylesheet" href="CSS/login.css" />
 
         <!--Font Icon-->
         <script
@@ -31,6 +30,7 @@
         <title>Nike. Just Do It. Nike VN</title>
     </head>
     <body>
+        <div id="pre-loader"></div>
         <header>
             <!--------------------------------Header---------------------------------------------->
             <div class="top-header">
@@ -51,7 +51,7 @@
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Join Us</a></li>
                     <li>
-                        <a href="#" id="btn-loading">Sign In</a>
+                        <a href="login.html" id="btn-loading">Sign In</a>
                     </li>
                 </ul>
             </div>
@@ -1200,64 +1200,61 @@
                     </div>
                 </div>
             </div>
-            <div id="overlay" class="hidden"></div>
-
-            <!-----------------------------Footer------------------------------>
-            <div class="nike-store">
-                <ul class="find-store">
-                    <span>Find a store</span>
-                    <li><a href="#">Become a member</a></li>
-                    <li><a href="#">Sign up for email</a></li>
-                    <li><a href="#">Send us feedback</a></li>
-                </ul>
-                <ul class="help">
-                    <span>Get Help</span>
-                    <li><a href="#">Order Status</a></li>
-                    <li><a href="#">Delivery</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Payment Options</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <ul class="about">
-                    <span>About Nike</span>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Investors</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                </ul>
-                <ul class="icon-box">
-                    <li>
-                        <a href="https://twitter.com/Nike" target="_blank"
-                            ><i class="fa-brands fa-twitter"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/nike" target="_blank"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.youtube.com/user/nike"
-                            target="_blank"
-                            ><i class="fa-brands fa-youtube"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/nike" target="_blank"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
-                    </li>
-                </ul>
-            </div>
-            <footer>
-                <span>Project Group 5</span>
-            </footer>
         </div>
+        <!-----------------------------Footer------------------------------>
+        <div id="overlay" class="hidden"></div>
+
+        <div class="nike-store">
+            <ul class="find-store">
+                <span>Find a store</span>
+                <li><a href="#">Become a member</a></li>
+                <li><a href="#">Sign up for email</a></li>
+                <li><a href="#">Send us feedback</a></li>
+            </ul>
+            <ul class="help">
+                <span>Get Help</span>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="about">
+                <span>About Nike</span>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Sustainability</a></li>
+            </ul>
+            <ul class="icon-box">
+                <li>
+                    <a href="https://twitter.com/Nike" target="_blank"
+                        ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/nike" target="_blank"
+                        ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/nike" target="_blank"
+                        ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/nike" target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <span>Project Group 5</span>
+        </footer>
 
         <script src="JS/script.js"></script>
         <script src="JS/slider.js"></script>
         <script src="JS/scroll.js"></script>
-        <script src="JS/login.js"></script>
     </body>
 </html>

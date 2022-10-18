@@ -280,7 +280,7 @@ input[type='search']::placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    height: 100vh;
+    height: 800px;
     position: relative;
     margin: 0px 50px;
     user-select: none;
@@ -643,7 +643,7 @@ body::-webkit-scrollbar-thumb {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 450px;
     flex: 33.33%;
     position: relative;
     cursor: pointer;
