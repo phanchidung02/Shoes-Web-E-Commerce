@@ -77,15 +77,6 @@ input[type='password']:focus {
     background-color: #ccc;
 }
 
-#pre-loader {
-    background: #f5f7fb url(..//Img/atom.gif) no-repeat center center;
-    height: 100vh;
-    background-size: 15%;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-
 #error-email,
 #error-pass {
     width: 360px;

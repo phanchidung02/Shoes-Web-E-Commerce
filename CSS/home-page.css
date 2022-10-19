@@ -722,3 +722,12 @@ footer {
     font-weight: 300;
     font-size: 14px;
 }
+
+#pre-loader {
+    background: #f5f7fb url(..//Img/atom.gif) no-repeat center center;
+    height: 100vh;
+    background-size: 15%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
