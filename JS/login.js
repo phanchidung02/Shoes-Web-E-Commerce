@@ -53,7 +53,7 @@ const checkValidateForm = () => {
         showError(errorPass, password, 'Vui lòng nhập mật khẩu');
         return false;
     } else if (
-        emailValue !== account1.email &&
+        emailValue !== account1.email ||
         passwordValue !== account1.password
     ) {
         const errorEmail = document.getElementById('error-email');
