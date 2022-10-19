@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
 .logo-nike-login {
     background-image: url(..//Img/swoosh_black_2x.png);
     background-position: center;
@@ -33,6 +45,7 @@ input[type='password']::placeholder {
     text-align: center;
     font-size: 24px;
     text-transform: uppercase;
+    width: 250px;
 }
 
 input[type='email']:focus,
@@ -85,4 +98,80 @@ input[type='password']:focus {
 
 .hidden {
     display: none;
+}
+
+.pop-up {
+    background-color: white;
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transition: all 0.4s;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0);
+    box-shadow: 0 8px 8px 0 rgba(103, 151, 255, 0.11),
+        0 12px 18px 0 rgba(103, 151, 255, 0.11);
+}
+
+.pop-up h2 {
+    background-image: linear-gradient(to right, #80ffdb, #72efdd, #64dfdf);
+    margin: 0;
+    padding: 20px;
+    color: #f94144;
+    font-size: 24px;
+}
+
+.pop-up h3 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    margin: 50px 0px;
+    color: #f94144;
+    font-weight: 400;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: blur(4px);
+    visibility: hidden;
+}
+
+.open-pop-up {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.show-overlay {
+    visibility: visible;
+}
+
+#close-pop-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px;
+    font-size: 20px;
+    color: #f94144;
+}
+
+#close-pop-up:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .pop-up {
+        width: 450px;
+        height: 250px;
+    }
+    form {
+        margin-top: 100px;
+    }
 }

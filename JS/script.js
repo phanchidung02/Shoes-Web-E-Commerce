@@ -85,6 +85,7 @@ const respond = (e) => {
             navLinks.classList.remove('nav-menu-transform');
             overlay.classList.add('hidden');
             body.classList.remove('overflow');
+            btnClose.classList.add('hidden');
         });
     }
 };

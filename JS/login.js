@@ -7,6 +7,9 @@ const account1 = {
 const form = document.querySelector('form');
 const email = document.getElementById('input-email');
 const password = document.getElementById('input-pass');
+const overlay = document.querySelector('.overlay');
+const popUp = document.querySelector('.pop-up');
+const btnError = document.querySelector('#close-pop-up');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -58,7 +61,7 @@ const checkValidateForm = () => {
     ) {
         const errorEmail = document.getElementById('error-email');
         const errorPass = document.getElementById('error-pass');
-        alert('Sai tên đăng nhập hoặc mật khẩu');
+        showPopUp();
         showError(errorEmail, email, 'Vui lòng nhập lại email');
         showError(errorPass, password, 'Vui lòng nhập lại mật khẩu');
         return false;
@@ -79,3 +82,22 @@ const checkEmailRegex = (email) => {
         /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     return String(email).toLowerCase().match(re);
 };
+
+const showPopUp = () => {
+    popUp.classList.add('open-pop-up');
+    overlay.classList.add('show-overlay');
+};
+
+const closePopUp = () => {
+    popUp.classList.remove('open-pop-up');
+    overlay.classList.remove('show-overlay');
+};
+
+btnError.addEventListener('click', () => {
+    console.log(1);
+    closePopUp();
+});
+
+overlay.addEventListener('click', () => {
+    closePopUp();
+});
