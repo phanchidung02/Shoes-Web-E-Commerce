@@ -66,7 +66,7 @@ const checkValidateForm = () => {
         showError(errorPass, password, 'Vui lòng nhập lại mật khẩu');
         return false;
     } else {
-        window.location.assign('index.html');
+        window.location.replace('/index.html');
     }
 };
 
@@ -94,7 +94,6 @@ const closePopUp = () => {
 };
 
 btnError.addEventListener('click', () => {
-    console.log(1);
     closePopUp();
 });
 

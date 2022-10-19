@@ -11,7 +11,7 @@ const btnClose = document.querySelector('.btn-close');
 const body = document.querySelector('body');
 const overlay = document.querySelector('#overlay');
 
-const overClick = () => {
+const outClick = () => {
     topHeader.classList.remove('hidden');
     cart.classList.remove('hidden');
     wishLists.classList.remove('hidden');
@@ -35,7 +35,7 @@ const onClick = () => {
 
 search.addEventListener('click', onClick);
 
-btnCancel.addEventListener('click', overClick);
+btnCancel.addEventListener('click', outClick);
 
 btnSearch.addEventListener('click', onClick);
 
@@ -99,5 +99,5 @@ let loader = document.querySelector('#pre-loader');
 window.addEventListener('load', () => {
     setTimeout(() => {
         loader.style.display = 'none';
-    }, 2000);
+    }, 2300);
 });
