@@ -99,5 +99,5 @@ let loader = document.querySelector('#pre-loader');
 window.addEventListener('load', () => {
     setTimeout(() => {
         loader.style.display = 'none';
-    }, 2300);
+    }, 2000);
 });

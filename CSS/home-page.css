@@ -356,11 +356,6 @@ p {
     user-select: none;
 }
 
-.swiperBanner {
-    pointer-events: none;
-    user-select: text;
-}
-
 .swiper-slider {
     text-align: center;
     font-size: 18px;
@@ -726,4 +721,26 @@ footer {
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+/*Custom Slider Production Scrollbar*/
+.swiper-scrollbar-drag {
+    background-image: linear-gradient(
+        -45deg,
+        #5390d9,
+        #4ea8de,
+        #56cfe1
+    ) !important;
+    border-radius: 50px;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+/*Custom Slider Production Button*/
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #ff6d28;
 }

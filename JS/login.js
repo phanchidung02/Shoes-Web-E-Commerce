@@ -1,5 +1,4 @@
 const account1 = {
-    username: 'chidung',
     email: 'phanchidung@gmail.com',
     password: 'hahahaha',
 };

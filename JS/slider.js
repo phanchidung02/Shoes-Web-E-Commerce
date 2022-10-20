@@ -4,6 +4,7 @@ var swiper = new Swiper('.mySwiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
         hide: true,
+        draggable: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
@@ -18,6 +19,7 @@ var swiper = new Swiper('.mySwiperBanner', {
     slidesPerView: 1,
     speed: 2000,
     loop: true,
+    allowTouchMove: false,
     autoplay: {
         delay: 2000,
         disableOnInteraction: false,
