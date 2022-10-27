@@ -10,6 +10,7 @@ const btnMenu = document.querySelector('.btn-menu');
 const btnClose = document.querySelector('.btn-close');
 const body = document.querySelector('body');
 const overlay = document.querySelector('#overlay');
+const btnPrev = document.querySelector('.btn-prev');
 
 const outClick = () => {
     topHeader.classList.remove('hidden');
