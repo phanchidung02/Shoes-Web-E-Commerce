@@ -16,8 +16,8 @@ form.addEventListener('submit', (e) => {
 });
 
 email.addEventListener('keyup', (e) => {
-    const emailValue = email.value.trim();
     e.preventDefault();
+    const emailValue = email.value.trim();
     if (!checkEmailRegex(emailValue)) {
         const errorEmail = document.getElementById('error-email');
         showError(errorEmail, email, 'Vui lòng nhập đúng định dạng email');
@@ -31,8 +31,9 @@ email.addEventListener('keyup', (e) => {
 });
 
 password.addEventListener('keyup', (e) => {
-    const passwordValue = password.value.trim();
     e.preventDefault();
+
+    const passwordValue = password.value.trim();
     if (passwordValue.length < 8) {
         const errorPass = document.getElementById('error-pass');
         showError(errorPass, password, 'Vui lòng nhập mật khẩu trên 8 kí tự');
